@@ -141,7 +141,6 @@ CREATE TABLE IF NOT EXISTS `a3m_acl_role` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
   `description` varchar(160) COLLATE utf8_unicode_ci NOT NULL,
-  `suspendedon` datetime NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `role_name` (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
@@ -150,6 +149,7 @@ CREATE TABLE IF NOT EXISTS `a3m_acl_role` (
 -- Dumping data for table `a3m_acl_role`
 --
 
+INSERT INTO `a3m_acl_role` (`id`, `name`, `description`) VALUES (1, 'Admin', 'Administrator');
 
 -- --------------------------------------------------------
 
